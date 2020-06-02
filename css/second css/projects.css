@@ -1,0 +1,83 @@
+/* SECOND CHOICE COLOR */
+
+:root {
+    --green-darkest:#002C32; 
+    --green-darker:hsl(95, 36%, 25%); 
+    --green-dark:hsl(130, 86%, 8%); 
+    --green-medium:hsl(160, 26%, 25%);
+    --green-light:hsl(80, 25%, 39%); 
+    --green-ligther:hsl(77, 30%, 53%); 
+  
+}
+  
+h2 {
+    padding-top: 1em;
+}
+
+h3 {
+    padding-bottom: 1rem;
+}
+
+hr {
+    width: 80%;
+    height: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:var(--green-ligther);
+    border: 0 none;
+    margin-top: 100px;
+    margin-bottom:100px;
+}
+
+
+/* TRIED SO MANY VERSIONS TO USE IMAGE AS UL LI -----WITHOUT SUCCESSS */
+
+/* .list {
+    margin: 0;
+    padding: 0;
+  }
+  
+.list-li {
+    background: url('/img/1x/list-style.png') no-repeat top left;
+    margin: 0;
+    padding: 4px 0 4px 20px;
+    list-style: none;
+} */
+
+
+/* 
+li {
+    list-style-image: url('/img/1x/list-style.png');
+} */
+
+/* #image ul {
+    line-height: 1.5em;
+    list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4621/treehouse-marker.png);
+} */
+
+/* iframe */
+.iframe-container{
+    margin: 0 auto;
+    max-width:100%;
+    width:500px;
+    height:300px;
+    padding-bottom: 2em;
+}
+@media only screen and (max-width: 992px) {
+    .iframe-container{
+        width: 80%;
+        height:400px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .iframe-container{
+        width: 100%;
+        height:500px;
+    }
+}
+
+#graphic-design {
+    text-align: center;
+/*     align-items: center;  doesnt work on image =)*/
+    margin: 0 auto;
+}

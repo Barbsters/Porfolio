@@ -1,0 +1,69 @@
+/* SECOND CHOICE COLOR */
+
+:root {
+    --green-darkest:#002C32; 
+    --green-darker:hsl(95, 36%, 25%); 
+    --green-dark:hsl(130, 86%, 8%); 
+    --green-medium:hsl(160, 26%, 25%);
+    --green-light:hsl(80, 25%, 39%); 
+    --green-ligther:hsl(77, 30%, 53%); 
+  
+}
+  
+.bg-img {
+    background-image: url("/img/monstera-contact.png");
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+
+    /* Center and scale the image nicely */
+/*     background-position: center;  not using as image was cutten from top*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+form {
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(190, 212, 194);
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    box-shadow: 2px 5px 10px var(--green-darkest);
+}
+  
+input[type=submit] {
+    background-color: var(--green-darker);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 2px 5px 10px var(--green-darkest);
+    
+}
+  
+input[type=submit]:hover {
+    background-color: #f2f2f2;
+    color: var(--green-darkest);
+}
+  
+/* .container {
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: var(--green-dark);
+    padding: 30px;
+} */
+

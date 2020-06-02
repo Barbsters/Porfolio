@@ -1,0 +1,57 @@
+:root {
+    --green-darkest:hsl(95, 36%, 5%); 
+    --green-darker:hsl(95, 36%, 25%); 
+    --green-dark:hsl(95, 36%, 40%); 
+    --green-medium:hsl(95, 36%, 50%);
+    --green-light:hsl(95, 36%, 75%); 
+    --green-ligther:hsl(95, 36%, 95%); 
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+
+}
+
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--green-dark);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+  
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--green-darkest);
+    display: block;
+}
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+  
+main {
+    margin-top: 0px;
+    margin-left: 220px; /* Same as the width of the sidenav */
+}
+  
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+

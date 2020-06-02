@@ -1,0 +1,167 @@
+/* SECOND CHOICE COLOR */
+
+:root {
+  --green-darkest:hsl(191, 28%, 15%); 
+  --green-darker:hsl(95, 36%, 25%); 
+  --green-dark:hsl(130, 86%, 8%); 
+  --green-medium:hsl(160, 26%, 25%);
+  --green-light:hsl(80, 25%, 39%); 
+  --green-ligther:hsl(77, 30%, 53%); 
+
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 auto
+}
+
+p {
+    max-width: 500px; 
+    text-align: center;
+    margin: 0 auto; /* adding margin 0 auto sets text back to middle after max-width is set */
+}
+
+/* PORTRAIT IMAGE */
+ img.bottom-image {
+    position: relative;
+    display: block;
+    justify-content: center;
+/*     bottom: 0;
+    left: 0;
+    right: 0; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HORIZONTAL LILNE NOT USING */
+.padding {
+    padding: 20px;
+}
+
+hr.divider {
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+hr.divider:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BACKGROUND VIDEO NOT USED looks bad but good try :D*/
+.fullscreen-bg {
+    filter: blur(8px);
+    -webkit-filter: blur(2px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100
+}
+
+.myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    height: -webkit-fill-available; /* left right space aappears on specific sizes */
+}
+
+/* fot he viewport that doesnt mathc 16:9 aspect ratio  // not sure if works */
+@media (min-aspect-ratio: 16/9) {
+    .myVideo {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+@media (max-aspect-ratio: 16/9) {
+    .myVideo {
+      width: auto;
+      height: 100%;
+    }
+} 
+
+
+/* @media (min-aspect-ratio: 16/9) {
+    .myVideo {
+      height: 300%;
+      top: -100%;
+    }
+  }
+  
+  @media (max-aspect-ratio: 16/9) {
+    .myvideo {
+      width: 300%;
+      left: -100%;
+    }
+  } */
+  
+  @media (max-width: 767px) {
+    .fullscreen-bg {
+      background: url("/video/green_cell.mp4") center center / cover no-repeat;
+    }
+  
+    .Myvideo {
+      display: none;
+    }
+  }
